@@ -1,0 +1,8 @@
+services:
+  komodo-apprise-alerter:
+    image: foxxmd/komodo-apprise-alerter:latest
+    restart: unless-stopped
+    env_file:
+      - ./.env
+    ports:
+      - "7000:7000"
