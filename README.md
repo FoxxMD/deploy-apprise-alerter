@@ -9,10 +9,10 @@ Docker image built from [foxxmd/komodo-utilities](https://github.com/FoxxMD/komo
 ## Requirements
 
 * An [Apprise API instance](https://github.com/caronc/apprise-api)
-* Either...
-  * [Stateless URLs](https://github.com/caronc/apprise-api?tab=readme-ov-file#stateless-solution) for each [notification provider](https://github.com/caronc/apprise/wiki#notification-services) to use
+* Any of the following...
+  * Comma-separated [Stateless URLs](https://github.com/caronc/apprise-api?tab=readme-ov-file#stateless-solution) for each [notification provider](https://github.com/caronc/apprise/wiki#notification-services) to use
     * or `APPRISE_STATELESS_URLS` env defined on the apprise-api instance
-  * [Persistent Keys](https://github.com/caronc/apprise-api?tab=readme-ov-file#persistent-stateful-storage-solution) for each notification provider to use
+  * Comma-separated [Persistent Keys](https://github.com/caronc/apprise-api?tab=readme-ov-file#persistent-stateful-storage-solution) for each notification provider to use
 
 ## Komodo Resource TOML
 
