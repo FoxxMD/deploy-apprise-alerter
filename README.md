@@ -47,13 +47,18 @@ environment = """
   ## Send message/content with markdown formatting (default false)
   #MARKDOWN=true
 
-  # Prefixes messages with a checkmark when the Alert is in the 'Resolved' state
+  ## Prefixes messages with a checkmark when the Alert is in the 'Resolved' state
   #INDICATE_RESOLVED=true
 
-  # Filter if an alert is pushed based on its Resolved status
-  # * leave unset to push all alerts
-  # * otherwise, alerts will only be pushed if Alert is one of the comma-separated states set here
+  ## Filter if an alert is pushed based on its Resolved status
+  ## * leave unset to push all alerts
+  ## * otherwise, alerts will only be pushed if Alert is one of the comma-separated states set here
   #ALLOW_RESOLVED_TYPE=resolved,unresolved
+
+  ## Delay alerts with below types for X milliseconds 
+  ## and cancel pushing alert if it is resolved within that time
+  #UNRESOLVED_TIMEOUT_TYPES=ServerCpu,ServerMem
+  #UNRESOLVED_TIMEOUT=20000
 """
 
 [[alerter]]
