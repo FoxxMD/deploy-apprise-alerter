@@ -44,6 +44,9 @@ environment = """
   ## Set whether to include Komodo Severity Level in notification title
   #LEVEL_IN_TITLE=true
 
+  ## Send message/content with markdown formatting (default false)
+  #MARKDOWN=true
+
   # Prefixes messages with a checkmark when the Alert is in the 'Resolved' state
   #INDICATE_RESOLVED=true
 
