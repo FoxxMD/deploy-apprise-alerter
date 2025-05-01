@@ -97,7 +97,7 @@ endpoint.params.url = "http://apprise-alerter-ip:7000"
 
 </details>
 
-## Manual setup
+### Manual setup
 
 <details>
 
